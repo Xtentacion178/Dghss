@@ -6370,8 +6370,10 @@ function Library:CreateWindow(...)
         Name = "Window";
     })
 
-local corner = Instance.new("UICorner",Outer)
-corner.CornerRadius = UDim.new(0,19)
+
+   local corner = Instance.new("UICorner")
+   corner.CornerRadius = UDim.new(0.2,0)
+   corner.Parent = Outer
 
     LibraryMainOuterFrame = Outer
     Library:MakeDraggable(Outer, 25, true)

@@ -6372,7 +6372,7 @@ function Library:CreateWindow(...)
 
     Library:Create("UICorner", {
           CornerRadius = UDim.new(0.2, 0);
-          Parent = Outer;
+          Parent = self.Outer;
     })
    
     LibraryMainOuterFrame = Outer
